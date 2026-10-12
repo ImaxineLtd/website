@@ -1,6 +1,6 @@
 # Website Plan: IT Consulting, Automation, AI/ML Services and Medical Report Digitization (India, SEO-led)
 
-> Status: Draft v4 (one flagship product + three service lines) · Owner: TBD · Last updated: 2026-10-12
+> Status: Draft v5 (product named Caseproof) · Owner: TBD · Last updated: 2026-10-12
 > Placeholders in `[brackets]` need input from the business.
 
 ---
@@ -10,7 +10,7 @@
 | # | Goal | How we measure it (first 6–12 months) |
 |---|------|---------------------------------------|
 | 1 | Get qualified B2B leads from Indian organic search | Organic sessions from India, form/WhatsApp/call leads, lead-to-meeting rate |
-| 2 | Sell [Product Name] (medical document digitisation) to insurers, TPAs, diagnostic networks and health platforms | Demo requests, sample-case pilots, contracts signed |
+| 2 | Sell Caseproof (medical document digitisation) to insurers, TPAs, diagnostic networks and health platforms | Demo requests, sample-case pilots, contracts signed |
 | 2b | Win custom workflow, AI and software consulting projects | Consultation bookings, proposals sent, projects won |
 | 3 | Build authority in AI/ML and automation for Indian businesses | Rankings for target clusters, backlinks from Indian domains, branded search growth |
 | 4 | Shorten the sales cycle | Pages per lead, case-study views before contact, time from first visit to demo |
@@ -26,13 +26,16 @@
 
 Two engines, one brand:
 
-1. **Flagship product (proof)**: [Product Name], medical document digitisation for insurers and TPAs.
+1. **Flagship product (proof)**: **Caseproof**, medical document digitisation for insurers and TPAs.
+   - Lockup / descriptor: **Caseproof: Medical Document Digitisation for Insurers & TPAs**
+   - The name means "every case, verified", matching the human-review step. It is not tied to "medical", so it can later extend to claims, onboarding/KYC and other insurance documents without a rename.
+   - Use the descriptor next to the name on first mention on every page, so nobody reads "Caseproof" as a phone-case brand.
 2. **Services (revenue breadth)**, three lines:
    - **Custom workflow automation**: workflows built around how a business actually operates (intake → processing → human review → approval → delivery), not off-the-shelf RPA scripts.
    - **AI consulting and development**: document AI/OCR, computer vision, ML models, generative AI/LLM applications, from strategy and PoC to production.
    - **Software consulting and development**: custom web platforms, APIs and integrations, cloud architecture, and modernising legacy systems.
 
-**The product is the best case study for the services.** [Product Name] is itself a custom workflow (case intake, assignment, side-by-side review, audit trail, dashboards, API delivery) with AI in the middle, running as isolated per-customer software. Every service page should say: *"We built and run [Product Name]; we can build the same kind of system for your process."*
+**The product is the best case study for the services.** Caseproof is itself a custom workflow (case intake, assignment, side-by-side review, audit trail, dashboards, API delivery) with AI in the middle, running as isolated per-customer software. Every service page should say: *"We built and run Caseproof; we can build the same kind of system for your process."*
 
 ### 2a. Portfolio and brand architecture
 
@@ -42,7 +45,7 @@ The company brand is the umbrella. Today there is one product and three service 
 
 | Product | Industry / buyer | Status | Brief |
 |---|---|---|---|
-| [Product Name]: medical document digitisation | Insurers, TPAs, diagnostic networks, health platforms | Brief received | `docs/content/product-page.md` |
+| Caseproof: medical document digitisation | Insurers, TPAs, diagnostic networks, health platforms | Named; page copy drafted | `docs/content/caseproof-product-page.md` |
 
 Future products are added later using `docs/content/product-brief-template.md`. The site structure already allows for this, so nothing has to be rebuilt.
 
@@ -109,10 +112,10 @@ Keep URLs short, lowercase and keyword-bearing. Each service or product gets its
   Launch with the 3 pillar pages + 2–3 sub-pages that have the strongest proof; add the rest as content capacity allows.
 /products/                          Products hub
                                     lists every product, filterable by industry
-  /products/[medical-doc-product]/            medical document digitisation (copy: docs/content/product-page.md)
-    /products/[medical-doc-product]/security/
-    /products/[medical-doc-product]/integrations/
-    /products/[medical-doc-product]/pricing/  or "request pricing"
+  /products/caseproof/                        medical document digitisation (copy: docs/content/caseproof-product-page.md)
+    /products/caseproof/security/
+    /products/caseproof/integrations/
+    /products/caseproof/pricing/              or "request pricing"
   /products/[future-product]/                 added later, same pattern
 /industries/                        one page per industry we sell into; each lists that industry's products + services
   /industries/health-insurance/
@@ -162,7 +165,8 @@ Validate volumes and difficulty with Google Keyword Planner (location: India), A
 ### Product clusters (A1, A2, …): one cluster per product
 Every product gets its own cluster built the same way: product-category terms, problem/job-to-be-done terms, document or data-type terms, and "[category] software India" terms. Clusters for other products are added as their briefs come in.
 
-### Cluster A1: Insurance medical document digitisation ([Product Name])
+### Cluster A1: Insurance medical document digitisation (Caseproof)
+- branded: caseproof, caseproof demo, caseproof pricing (track branded search growth as a KPI)
 Low volume but very high intent and low competition. A few hundred searches a month from the right underwriting or TPA buyers is worth more than thousands of generic visits. Use both spellings (digitisation/digitization) across pages, since Indian searchers use both.
 - medical report digitisation / digitization, medical document digitisation for insurance
 - MER digitisation, medical examination report data extraction
@@ -230,7 +234,7 @@ The three service clusters below are competitive at the head term ("AI developme
 
 ### High-value assets (lead magnets and link magnets)
 1. **Sample-case pilot**: "Send us 10–50 de-identified cases and get structured output, a QC report and turnaround figures." Run under NDA, not as a public upload tool. Insurers will not drop real medical data into a website form, and a public upload of health data creates DPDP risk. A recorded product walkthrough (2–3 min video of the QC workspace) is the public-facing equivalent.
-2. **ROI calculator**: "What does manual MER and lab-report keying cost your underwriting team?" (cases per month × minutes per case × cost per hour vs. turnaround with [Product Name])
+2. **ROI calculator**: "What does manual MER and lab-report keying cost your underwriting team?" (cases per month × minutes per case × cost per hour vs. turnaround with Caseproof)
 3. **Vendor security checklist for medical document processing** (PDF, gated; aimed at insurer CISOs and procurement)
 4. **DPDP compliance guide for insurers and TPAs handling medical reports** (PDF, gated)
 5. **Annual report**: e.g. "Underwriting medicals in India: turnaround and data-quality benchmarks", built from our own anonymized data. Good for PR and backlinks.
@@ -309,7 +313,7 @@ The three service clusters below are competitive at the head term ("AI developme
 | Phase | Timeline | Deliverables |
 |---|---|---|
 | **0. Foundations** | Weeks 1–2 | Finalize brand name and positioning, keyword research and keyword→URL map, sitemap, wireframes, collect case studies, metrics and logos, GBP setup, analytics/Search Console |
-| **1. MVP site launch** | Weeks 3–6 | Home, About, Contact, 3 service pillar pages (workflow automation, AI consulting, software consulting) + 2–3 sub-pages, [Product Name] product page + security page, book-a-demo and book-a-consultation pages, 2 industry pages (Health/Life Insurance, TPAs), 2 case studies, legal pages including DPDP/Privacy, schema, sitemap, CWV-optimized |
+| **1. MVP site launch** | Weeks 3–6 | Home, About, Contact, 3 service pillar pages (workflow automation, AI consulting, software consulting) + 2–3 sub-pages, Caseproof product page + security page, book-a-demo and book-a-consultation pages, 2 industry pages (Health/Life Insurance, TPAs), 2 case studies, legal pages including DPDP/Privacy, schema, sitemap, CWV-optimized |
 | **2. Content and lead engine** | Months 2–3 | Blog with 2 posts per week, first pillar page (insurance medical document digitisation), solution pages (MER digitisation, underwriting automation, lab report extraction, ECG/TMT), ROI calculator, gated vendor-security checklist, product walkthrough video, Clutch/GoodFirms listings |
 | **3. Product-led growth** | Months 3–5 | Sample-case pilot programme page, integrations/API pages, remaining service sub-pages, 2nd and 3rd pillar guides (custom workflow automation, AI for Indian businesses), first non-insurance service case study |
 | **4. Expansion** | Months 6–12 | New products added via the brief template, industry pages beyond insurance as service clients come in, regional-language pages only if buyers need them (insurer buyers mostly search in English), city pages (only where real), annual data report, open-source tool, CMS migration if needed, CRO testing on top landing pages |
@@ -334,7 +338,8 @@ The three service clusters below are competitive at the head term ("AI developme
 ## 13. Open questions (need answers before Phase 1)
 
 1. **Brand:** What is the final company/brand name and domain? (Repo is `imaxineltd/website`. Is the brand "Imaxine"?)
-2. **Product and services proof:** What is [Product Name]? Beyond the product, which past workflow, AI or software projects can we show (even anonymised), and in which industries?
+1a. **Caseproof name checks (before launch):** IP India trademark search in classes 9 and 42, a Google search for clashing software names, and securing the name on the main site (`/products/caseproof/`) plus a defensive domain if available (e.g. `caseproof.in` or `caseproof.ai`) and LinkedIn/X handles.
+2. **Services proof:** Beyond Caseproof, which past workflow, AI or software projects can we show (even anonymised), and in which industries?
 3. **Proof:** Which clients, metrics and case studies can we publish (with permission)? The results block needs real figures for % reduction in manual entry, turnaround hours and reports per month.
 4. **Compliance claims:** Is on-premise / private-cloud deployment actually offered? Do we have ISO 27001/SOC 2? Where is data hosted (India region)? What is our position on DPDP and insurers' IRDAI outsourcing requirements?
 5. **Accuracy and SLA:** Do we commit to field-level accuracy after QC, and to a turnaround SLA? These are what underwriting heads will ask first.

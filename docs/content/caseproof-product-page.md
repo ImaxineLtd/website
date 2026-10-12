@@ -1,4 +1,4 @@
-# Product page: [Product Name]
+# Product page: Caseproof
 
 > Draft copy, SEO-structured. Based on the product brief. Placeholders in `[brackets]`.
 > Items marked **(confirm)** must be verified before publishing; nothing goes live that we cannot back up.
@@ -9,10 +9,10 @@
 
 | Field | Value |
 |---|---|
-| URL | `/products/[product-slug]/` |
+| URL | `/products/caseproof/` |
 | Primary keyword | medical document digitisation for insurance |
 | Secondary keywords | MER digitisation, medical underwriting automation, lab report data extraction, ECG/TMT report digitisation, TPA document processing |
-| Title tag (≤ 60 chars) | `Medical Report Digitisation for Insurers & TPAs \| [Product Name]` |
+| Title tag (≤ 60 chars) | `Medical Report Digitisation for Insurers & TPAs \| Caseproof` |
 | Meta description (≤ 155 chars) | `Turn scanned MERs, lab reports, ECGs and TMTs into verified, structured data in hours. AI extraction plus human QC, for Indian insurers and TPAs.` |
 | H1 | AI-powered medical document digitisation for insurers and health platforms |
 | Open Graph image | Screenshot of the side-by-side QC workspace (with synthetic data only) |
@@ -27,7 +27,7 @@
 
 Turn scanned medical reports into verified, structured data in hours, not days.
 
-[Product Name] reads medical examination reports (MER), blood and lab reports, ECGs and TMTs from scanned PDFs and images. It extracts every value into structured data and runs it through a built-in review workflow, so what reaches your underwriting and claims systems is accurate and ready to use.
+Caseproof reads medical examination reports (MER), blood and lab reports, ECGs and TMTs from scanned PDFs and images. It extracts every value into structured data and runs it through a built-in review workflow, so what reaches your underwriting and claims systems is accurate and ready to use.
 
 **[Book a demo]** · [Talk to our team] · WhatsApp icon
 
@@ -46,7 +46,7 @@ Turn scanned medical reports into verified, structured data in hours, not days.
 
 ---
 
-## H2: Why insurers and TPAs choose [Product Name]
+## H2: Why insurers and TPAs choose Caseproof
 
 ### H3: AI extraction built for medical documents
 It understands MER forms, lab panels, ECG and TMT reports, including handwritten fields and mixed-quality scans from diagnostic centres across India.
@@ -107,7 +107,7 @@ Each customer runs on a dedicated, isolated environment with its own database, s
 - Licensed, managed deployments, with optional on-premise or private-cloud hosting **(confirm)**.
 - Hosted in India **(confirm region)**; processing aligned with the Digital Personal Data Protection Act, 2023 **(confirm wording with legal)**.
 
-[Read our security overview →] (`/products/[product-slug]/security/`)
+[Read our security overview →] (`/products/caseproof/security/`)
 
 ---
 
@@ -151,7 +151,7 @@ Yes. Share a batch of de-identified sample cases under NDA and we will return st
 
 ## Final CTA
 
-### See [Product Name] on your own reports
+### See Caseproof on your own reports
 Book a 30-minute demo, or send us sample cases for a pilot.
 
 **[Book a demo]** · [Talk to our team]
@@ -175,7 +175,7 @@ Short form: Name · Work email · Phone · Company · Monthly report volume (dro
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "name": "[Product Name]",
+  "name": "Caseproof",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web",
   "description": "AI-powered medical document digitisation with human review for insurers, TPAs and health platforms. Extracts structured data from MERs, lab reports, ECGs and TMTs.",
@@ -184,7 +184,7 @@ Short form: Name · Work email · Phone · Company · Monthly report volume (dro
   "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "priceCurrency": "INR", "description": "Licensed deployment; pricing on request" }
 }
 ```
-Add `FAQPage` (from the FAQ section) and `BreadcrumbList` (Home › Products › [Product Name]). Do not add `AggregateRating` unless the reviews are real and shown on the page.
+Add `FAQPage` (from the FAQ section) and `BreadcrumbList` (Home › Products › Caseproof). Do not add `AggregateRating` unless the reviews are real and shown on the page.
 
 ---
 
