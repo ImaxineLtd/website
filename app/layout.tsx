@@ -16,6 +16,8 @@ export const metadata: Metadata = {
   description: site.description,
   openGraph: { type: "website", locale: site.locale, siteName: site.name },
   twitter: { card: "summary_large_image" },
+  // Preview builds (GitHub Pages) must not be indexed.
+  ...(process.env.GITHUB_PAGES === "true" && { robots: { index: false, follow: false } }),
 };
 
 export const viewport: Viewport = {

@@ -26,8 +26,9 @@ export const cta = {
   demo: { href: "/contact?interest=caseproof", label: "Book a demo" },
 };
 
+// Joins rather than resolves, so a site URL with a sub-path (e.g. GitHub Pages /website) is kept.
 export function absoluteUrl(path = "/") {
-  return new URL(path, site.url).toString();
+  return `${site.url.replace(/\/$/, "")}${path === "/" ? "/" : path}`;
 }
 
 // Page metadata with canonical + Open Graph. Setting openGraph on a page replaces the inherited object,
