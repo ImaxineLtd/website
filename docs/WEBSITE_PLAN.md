@@ -1,6 +1,6 @@
 # Website Plan: IT Consulting, Automation, AI/ML Services and Medical Report Digitization (India, SEO-led)
 
-> Status: Draft v1 · Owner: TBD · Last updated: 2026-10-12
+> Status: Draft v6 (paper-MER focus, insurer target accounts, Phase 1 site built) · Owner: TBD · Last updated: 2026-10-12
 > Placeholders in `[brackets]` need input from the business.
 
 ---
@@ -10,29 +10,85 @@
 | # | Goal | How we measure it (first 6–12 months) |
 |---|------|---------------------------------------|
 | 1 | Get qualified B2B leads from Indian organic search | Organic sessions from India, form/WhatsApp/call leads, lead-to-meeting rate |
-| 2 | Sell the medical report digitization product to labs, hospitals and clinics | Demo requests, free-trial uploads, pilots signed |
+| 2 | Sell Caseproof (medical document digitisation) to insurers, TPAs, diagnostic networks and health platforms | Demo requests, sample-case pilots, contracts signed |
+| 2b | Win custom workflow, AI and software consulting projects | Consultation bookings, proposals sent, projects won |
 | 3 | Build authority in AI/ML and automation for Indian businesses | Rankings for target clusters, backlinks from Indian domains, branded search growth |
 | 4 | Shorten the sales cycle | Pages per lead, case-study views before contact, time from first visit to demo |
 
 **Primary conversion:** "Book a free consultation" / "Request a product demo".
-**Secondary conversion:** WhatsApp chat, free OCR sample upload, downloadable guides.
+**Secondary conversion:** WhatsApp chat, sample-case pilot request (under NDA), downloadable guides.
 
 ---
 
 ## 2. Positioning
 
-**One-liner (draft):** *"AI, automation and IT consulting for Indian businesses, with production-ready products for healthcare document digitization."*
+**One-liner (draft):** *"We build AI-powered workflows and software for Indian businesses, and we run them in production ourselves."*
 
 Two engines, one brand:
 
-1. **Products (proof)**: Medical report digitization (OCR + ML) and any other products. These show we ship working AI, not slide decks.
-2. **Services (revenue breadth)**: IT consulting, process automation (RPA/workflow), AI/ML development, data engineering.
+1. **Flagship product (proof)**: **Caseproof**, medical document digitisation for insurers and TPAs.
+   - Lockup / descriptor: **Caseproof: Medical Document Digitisation for Insurers & TPAs**
+   - The name means "every case, verified", matching the human-review step. It is not tied to "medical", so it can later extend to claims, onboarding/KYC and other insurance documents without a rename.
+   - Use the descriptor next to the name on first mention on every page, so nobody reads "Caseproof" as a phone-case brand.
+2. **Services (revenue breadth)**, three lines:
+   - **Custom workflow automation**: workflows built around how a business actually operates (intake → processing → human review → approval → delivery), not off-the-shelf RPA scripts.
+   - **AI consulting and development**: document AI/OCR, computer vision, ML models, generative AI/LLM applications, from strategy and PoC to production.
+   - **Software consulting and development**: custom web platforms, APIs and integrations, cloud architecture, and modernising legacy systems.
 
-The products give the services credibility. Every service page links to a product case study, and every product page offers "custom build / integration" services.
+**The product is the best case study for the services.** Caseproof is itself a custom workflow (case intake, assignment, side-by-side review, audit trail, dashboards, API delivery) with AI in the middle, running as isolated per-customer software. Every service page should say: *"We built and run Caseproof; we can build the same kind of system for your process."*
+
+### 2a. Portfolio and brand architecture
+
+The company brand is the umbrella. Today there is one product and three service lines. The homepage leads with the services (they apply to every industry) and features the product as a flagship and proof point, so the site does not read as healthcare-only.
+
+**Recommendation: all products live on the main domain as subfolders** (`/products/<product>/`), not on separate domains or subdomains. Backlinks and authority earned by any product then lift every product and service page. Use a separate domain only if a product has a different brand, a separate sales team and its own marketing budget.
+
+| Product | Industry / buyer | Status | Brief |
+|---|---|---|---|
+| Caseproof: medical document digitisation | Insurers, TPAs, diagnostic networks, health platforms | Named; page copy drafted | `docs/content/caseproof-product-page.md` |
+
+Future products are added later using `docs/content/product-brief-template.md`. The site structure already allows for this, so nothing has to be rebuilt.
+
+**How each future product is handled (same playbook every time):**
+1. Its own product page plus security/integrations/pricing sub-pages where relevant
+2. Its own keyword cluster (§5) and 2–4 problem-led solution pages
+3. An industry page for its buyer, which also links to relevant services
+4. Its own pilot or demo offer and a case study
+5. Leads tagged by product in the CRM so each product's pipeline is measured separately
+
+**Products hub at launch:** with a single product, `/products/` can redirect to the product page (or show it as the single card). It becomes a real hub when the second product arrives.
+
+### Caseproof lead angle: physical MER forms
+Many Indian life and health insurers still receive **paper MER forms filled in by hand** at diagnostic centres during the pre-policy medical check-up (PPMC). These are slow and error-prone to key in, and they are where Caseproof's AI plus human review is strongest. The website, keywords and outreach lead with handwritten/physical MER digitisation; lab, ECG and TMT reports are supporting document types.
+
+### 2b. Target accounts (sales outreach, not website content)
+
+Caseproof is sold to a small number of large buyers, so SEO is backed by direct outreach to named accounts (account-based marketing):
+
+| Insurer | Notes |
+|---|---|
+| Tata AIA Life Insurance | Priority target. Confirm current MER process (paper vs digital) through contacts. |
+| Axis Max Life Insurance (formerly Max Life) | Priority target. |
+| Other life and health insurers and TPAs that still use physical MER forms | Build the list from industry contacts and diagnostic-network partners. Verify which still use paper before outreach. |
+
+**Do not name these insurers on the website** (no "for Tata AIA" pages, logos or keywords) unless they are customers who have given written permission. Naming them implies a relationship, risks trademark complaints, and would put off the very buyers we want.
+
+How the site supports outreach:
+- Every outreach message links to `/products/caseproof` and the security page, which answer underwriting and vendor-risk questions before the first call.
+- The Caseproof FAQ covers "Does it work with our insurer's MER format?" (yes, configured per customer), which is the first question a named account will ask.
+- Use LinkedIn (heads of underwriting, medical underwriting, operations) plus diagnostic-network partners who already process these insurers' PPMCs.
+- Track named-account visits with reverse-IP tools only if allowed under DPDP and our privacy policy.
+
+### Product differentiators (from the product brief)
+- **Built for insurance medical documents**: MER forms, blood and lab panels, ECGs and TMTs, including handwritten fields and mixed-quality scans.
+- **Human-verified, not just AI**: annotators and reviewers check every report side by side with the source before it is finalised. Most OCR competitors stop at extraction; this is the main wedge.
+- **Standardised output**: test names, units and values mapped to the customer's catalogue and reference ranges, including calculated fields.
+- **Isolated environment per customer**: dedicated database, storage and pipeline. This matters to insurers' security and vendor-risk reviews.
+- **Operations tooling**: case assignment, live dashboards, audit trail, processing monitor, per-customer configuration.
 
 ### Differentiators to stress for India
-- **Built for Indian documents**: handwritten prescriptions, mixed English + Hindi/regional-language reports, low-quality scans and phone photos, varied lab report formats.
-- **Compliance-ready**: Digital Personal Data Protection (DPDP) Act 2023, ABDM/ABHA integration readiness, FHIR/HL7 output, Indian data residency (hosting in Mumbai/Hyderabad regions).
+- **Built for Indian documents**: pre-policy medical check-up (PPMC) reports from many different diagnostic centres, each with its own MER and lab report layout.
+- **Compliance-ready**: Digital Personal Data Protection (DPDP) Act 2023 and Indian data residency (hosting in Mumbai/Hyderabad regions). Insurers will also ask about IRDAI outsourcing and information-security expectations; prepare answers, but only claim what is verified.
 - **INR pricing and SME-friendly engagement**: fixed-price pilots, GST invoicing, monthly plans.
 - **Fast pilots**: e.g. "a working proof of concept in 2–4 weeks" (confirm what we can actually commit to).
 
@@ -42,11 +98,14 @@ The products give the services credibility. Every service page links to a produc
 
 | Segment | Who | Pain | Entry offer |
 |---------|-----|------|-------------|
-| **Diagnostic labs and pathology chains** | Owners, lab managers, IT heads (NABL labs, Tier 1–3 cities) | Manual data entry, report formatting, LIS integration | Free sample digitization, pilot |
-| **Hospitals and clinics** | Medical records (MRD) heads, CIOs, NABH coordinators | Paper records, ABDM compliance, record retrieval | ABDM-readiness assessment, product demo |
-| **Health-tech / insurance / TPAs** | Product and ops teams | Claims documents, discharge summaries, extraction at scale | OCR/extraction API, custom ML |
-| **SMEs and mid-market** (manufacturing, logistics, finance, retail) | Founders, ops heads | Manual processes, Excel/Tally-heavy workflows | Automation audit, quick-win automation |
-| **Enterprises and startups** | CTOs, product heads | Need AI/ML talent and delivery capacity | AI strategy workshop, PoC, dedicated team |
+| **Life and health insurers** (primary) | Heads of underwriting, medical underwriting, ops, CIO/CISO | PPMC/MER reports keyed in by hand, slow underwriting turnaround, inconsistent data | Sample-case pilot, product demo |
+| **TPAs** (primary) | Ops heads, medical teams, IT | High volumes of medical documents for claims and health checks, tight SLAs | Pilot on a real batch, API integration |
+| **Diagnostic networks serving insurers** | Insurance desk heads, ops managers | Converting reports into each insurer's format and catalogue | Demo, per-report pricing |
+| **Digital health platforms** | Product and engineering teams | Turning uploaded reports into structured health records | Intake API and webhook integration |
+| **Existing product customers** (services upsell) | Ops and IT heads at insurers/TPAs | Other manual back-office processes (claims, onboarding, approvals) | Workflow automation discovery workshop |
+| **SMEs and mid-market** (manufacturing, logistics, finance, retail) → *workflow automation* | Founders, ops heads | Manual, Excel-heavy processes, approvals over email/WhatsApp | Process audit, fixed-price first workflow |
+| **Enterprises** → *AI consulting* | CTOs, innovation and ops heads | Want AI in production, not just experiments | AI use-case workshop, paid PoC |
+| **Startups and product companies** → *software consulting* | Founders, CTOs | Need to build or scale a platform without a large in-house team | Architecture review, MVP build, dedicated team |
 
 ---
 
@@ -57,35 +116,43 @@ Keep URLs short, lowercase and keyword-bearing. Each service or product gets its
 ```
 /                                   Home
 /services/                          Services hub
-  /services/it-consulting/
-  /services/business-process-automation/
-    /services/rpa-services/
-    /services/document-automation/
-  /services/ai-development/
-    /services/generative-ai-llm-solutions/
-    /services/chatbot-development/
-  /services/machine-learning-development/
+  /services/workflow-automation/                     pillar 1: custom workflow automation
+    /services/document-processing-automation/        (closest to the product; easiest proof)
+    /services/approval-and-review-workflows/          human-in-the-loop, maker-checker
+    /services/system-integration/                     APIs, webhooks, ERP/CRM connections
+  /services/ai-consulting/                           pillar 2: AI consulting and development
+    /services/document-ai-ocr/
     /services/computer-vision/
-    /services/predictive-analytics/
-  /services/data-engineering/
-  /services/cloud-devops/            (only if offered)
+    /services/generative-ai-development/              LLM apps, RAG, assistants
+    /services/machine-learning-development/
+  /services/software-consulting/                     pillar 3: software consulting and development
+    /services/custom-software-development/
+    /services/saas-platform-development/
+    /services/cloud-architecture/
+    /services/legacy-modernisation/
+  Launch with the 3 pillar pages + 2–3 sub-pages that have the strongest proof; add the rest as content capacity allows.
 /products/                          Products hub
-  /products/medical-report-digitization/      main product page
-    /products/medical-report-digitization/features/
-    /products/medical-report-digitization/pricing/
-    /products/medical-report-digitization/api/   developer docs / API
-  /products/[other-product]/
-/industries/
-  /industries/healthcare/
-  /industries/diagnostic-labs/
-  /industries/insurance-tpa/
-  /industries/manufacturing/
-  /industries/bfsi/
-  /industries/logistics/
+                                    lists every product, filterable by industry
+  /products/caseproof/                        medical document digitisation (copy: docs/content/caseproof-product-page.md)
+    /products/caseproof/security/
+    /products/caseproof/integrations/
+    /products/caseproof/pricing/              or "request pricing"
+  /products/[future-product]/                 added later, same pattern
+/industries/                        one page per industry we sell into; each lists that industry's products + services
+  /industries/health-insurance/
+  /industries/life-insurance/
+  /industries/tpa/
+  /industries/diagnostic-networks/
+  /industries/digital-health/
+  /industries/[industry of product 2]/
+  /industries/[industry of product 3]/
+  /industries/manufacturing/  /industries/bfsi/  /industries/logistics/   (only if we have products or case studies there)
 /solutions/                         problem-led pages (high-intent SEO)
-  /solutions/lab-report-ocr/
-  /solutions/prescription-ocr/
-  /solutions/abdm-integration/
+  /solutions/mer-digitisation/                  medical examination reports
+  /solutions/medical-underwriting-automation/
+  /solutions/lab-report-data-extraction/
+  /solutions/ecg-tmt-report-digitisation/
+  /solutions/insurance-medical-document-processing/
   /solutions/invoice-processing-automation/
   /solutions/kyc-document-extraction/
 /case-studies/                      + /case-studies/[slug]/
@@ -106,7 +173,7 @@ Every service, product and solution page should include:
 5. Proof: a case study, metrics and client logos (with permission)
 6. Tech stack and integrations
 7. Engagement models and indicative INR pricing (where possible)
-8. An FAQ section (written to win People Also Ask results, with FAQ schema)
+8. An FAQ section answering real buyer questions in plain, quotable sentences (helps People Also Ask and AI answers). FAQPage schema can stay but no longer earns Google rich results (see `docs/SEO_REVIEW.md`).
 9. Related services and products (internal links)
 10. A final CTA and a short form (name, company, phone, requirement)
 
@@ -116,40 +183,54 @@ Every service, product and solution page should include:
 
 Validate volumes and difficulty with Google Keyword Planner (location: India), Ahrefs/Semrush and Search Console once live. The clusters below are the starting hypothesis.
 
-### Cluster A: Medical report digitization (product, highest priority)
-Lower competition and high intent. This is where we can win first.
-- medical report digitization, medical records digitization India
-- lab report OCR, pathology report OCR, blood test report extraction
-- prescription OCR, handwritten prescription recognition
-- medical document OCR API, healthcare OCR software India
-- hospital records digitization services, MRD digitization
-- ABDM integration, ABHA health records integration, FHIR conversion
-- discharge summary extraction, insurance claim document processing
+### Product clusters (A1, A2, …): one cluster per product
+Every product gets its own cluster built the same way: product-category terms, problem/job-to-be-done terms, document or data-type terms, and "[category] software India" terms. Clusters for other products are added as their briefs come in.
 
-### Cluster B: AI/ML services
-Competitive, so target long-tail and location modifiers.
-- AI development company in India, AI consulting services India
-- machine learning development services India
-- computer vision company India, OCR solution provider India
-- generative AI development company India, LLM / RAG chatbot development
-- AI for healthcare India, AI for manufacturing India
+### Cluster A1: Insurance medical document digitisation (Caseproof)
+- branded: caseproof, caseproof demo, caseproof pricing (track branded search growth as a KPI)
+Low volume but very high intent and low competition. A few hundred searches a month from the right underwriting or TPA buyers is worth more than thousands of generic visits. Use both spellings (digitisation/digitization) across pages, since Indian searchers use both.
+- medical report digitisation / digitization, medical document digitisation for insurance
+- MER digitisation, handwritten MER form digitisation, physical / paper MER to digital
+- medical examination report data extraction
+- PPMC report digitisation, pre-policy medical check-up automation
+- medical underwriting automation India, underwriting data extraction
+- lab report data extraction, blood test report to Excel / structured data
+- ECG report digitisation, TMT report data extraction
+- TPA document processing, insurance medical records processing
+- human-in-the-loop document processing, intelligent document processing for insurance
+- medical OCR API India, medical report OCR software
 
-### Cluster C: Automation
+The three service clusters below are competitive at the head term ("AI development company India"). Win first on long-tail and industry-specific variants, where the product gives us proof (documents, insurance, healthcare, human review).
+
+### Cluster B: Custom workflow automation
+- custom workflow automation services India, workflow automation company India
 - business process automation services India
-- RPA services / RPA company India
-- document automation, invoice processing automation
-- workflow automation for SMEs, Tally / ERP automation
-- WhatsApp automation for business
+- document processing automation, document workflow automation
+- human-in-the-loop workflow, maker-checker / approval workflow software
+- custom workflow software development, workflow management system development
+- insurance workflow automation, claims workflow automation, back-office automation India
 
-### Cluster D: IT consulting
-- IT consulting services India, digital transformation consulting
-- cloud migration consulting, IT strategy for SMEs
+### Cluster C: AI consulting and development
+- AI consulting services India, AI development company India
+- document AI / intelligent document processing services, OCR development company India
+- computer vision development India, machine learning development services India
+- generative AI development company India, LLM application development, RAG development
+- AI for insurance India, AI for healthcare India
+- "AI proof of concept" services, AI strategy consulting
+
+### Cluster D: Software consulting and development
+- software consulting services India, custom software development company India
+- SaaS development company India, multi-tenant SaaS architecture
+- API development and integration services, cloud architecture consulting
+- legacy application modernisation India
 - city modifiers (Bengaluru, Hyderabad, Pune, Mumbai, Delhi NCR, Chennai, Ahmedabad), only where we have a presence
 
 ### Cluster E: Informational (top of funnel, blog)
-- "how to digitize medical records in India"
-- "what is ABDM / ABHA and how labs can integrate"
-- "DPDP Act compliance for hospitals"
+- "what is a medical examination report (MER) in insurance"
+- "pre-policy medical check-up (PPMC): process and turnaround"
+- "how insurers can speed up medical underwriting"
+- "AI vs human review for medical data extraction: accuracy and risk"
+- "DPDP Act: what insurers and TPAs must ask a document-processing vendor"
 - "OCR vs intelligent document processing"
 - "cost of AI development in India"
 - "RPA vs AI automation: which one for SMEs"
@@ -163,25 +244,26 @@ Competitive, so target long-tail and location modifiers.
 ### Pillar → cluster model
 | Pillar page (long, evergreen) | Supporting articles (examples) |
 |---|---|
-| *The complete guide to medical records digitization in India* | ABDM integration steps; OCR accuracy on handwritten prescriptions; DPDP compliance checklist for labs; LIS/HIS integration; cost of digitizing a hospital's records |
-| *AI for Indian businesses: a practical guide* | AI use cases by industry; cost of AI projects in India; build vs buy; how to run an AI PoC |
-| *Business process automation guide for Indian SMEs* | RPA vs AI; automating Tally/GST workflows; invoice processing; WhatsApp automation |
+| *Medical document digitisation for insurers and TPAs in India: the complete guide* | MER and PPMC data extraction; why human review matters for underwriting data; mapping lab values to a test catalogue and reference ranges; ECG/TMT report digitisation; DPDP checklist for insurers' document vendors; build vs buy for underwriting data |
+| *AI for Indian businesses: a practical guide* | AI use cases by industry; cost of AI projects in India; build vs buy; how to run an AI PoC; when AI needs a human reviewer |
+| *Custom workflow automation: a guide for Indian businesses* | Off-the-shelf vs custom workflow software; RPA vs AI vs custom workflows; designing human-in-the-loop review; audit trails and compliance; cost of building workflow software in India |
+| *Custom software development in India: a buyer's guide* | Fixed-price vs time-and-materials; how to scope an MVP; single-tenant vs multi-tenant SaaS; choosing a development partner; what to ask about security |
 | *Intelligent document processing (IDP) explained* | OCR vs IDP; KYC extraction; insurance claims automation; multilingual OCR for Indian languages |
 
 ### Cadence
-- **Months 1–3:** 2 articles per week (prioritize Cluster A and E healthcare topics), plus 2 case studies
+- **Months 1–3:** 2 articles per week (prioritise the product clusters with publishable proof, plus matching informational topics), plus 2 case studies
 - **Months 4–12:** 1–2 articles per week, 1 case study per month, quarterly refresh of top pages
 
 ### High-value assets (lead magnets and link magnets)
-1. **Free OCR demo**: upload a sample (anonymized) lab report and get structured output. This is the strongest conversion and link asset. It needs rate limits, auto-deletion of uploads and a DPDP consent notice.
-2. **ROI calculator**: "How much does manual data entry cost your lab?"
-3. **ABDM-readiness checklist** (PDF, gated)
-4. **DPDP compliance guide for healthcare** (PDF, gated)
-5. **Annual report**: e.g. "State of healthcare digitization in Indian labs", built from our own anonymized data. Good for PR and backlinks.
+1. **Sample-case pilot**: "Send us 10–50 de-identified cases and get structured output, a QC report and turnaround figures." Run under NDA, not as a public upload tool. Insurers will not drop real medical data into a website form, and a public upload of health data creates DPDP risk. A recorded product walkthrough (2–3 min video of the QC workspace) is the public-facing equivalent.
+2. **ROI calculator**: "What does manual MER and lab-report keying cost your underwriting team?" (cases per month × minutes per case × cost per hour vs. turnaround with Caseproof)
+3. **Vendor security checklist for medical document processing** (PDF, gated; aimed at insurer CISOs and procurement)
+4. **DPDP compliance guide for insurers and TPAs handling medical reports** (PDF, gated)
+5. **Annual report**: e.g. "Underwriting medicals in India: turnaround and data-quality benchmarks", built from our own anonymized data. Good for PR and backlinks.
 
 ### E-E-A-T (trust signals Google weighs heavily for health topics)
 - Named authors with bios and LinkedIn profiles; credentials for medical/technical reviewers
-- "Reviewed by" for healthcare content (ideally a doctor or pathologist advisor)
+- "Reviewed by" for healthcare content (ideally a doctor, pathologist or medical underwriter advisor)
 - Clear company details: registered address, CIN, GSTIN, contact phone
 - Real case studies with numbers; no stock-photo "clients"
 
@@ -192,8 +274,8 @@ Competitive, so target long-tail and location modifiers.
 - **Google Business Profile** for each real office. Keep categories, services, photos and posts current, and gather reviews from clients.
 - **City pages** only where we have an office, staff or clients. Each one needs unique content (local clients, local case study, team). Avoid thin "AI company in [every city]" doorway pages, because Google penalizes them.
 - **NAP consistency** (name, address, phone) across the site, GBP, Justdial, IndiaMART, Clutch, GoodFirms, LinkedIn and Crunchbase.
-- **Indian directories and listings:** Clutch, GoodFirms, DesignRush, IndiaMART (for products), Justdial, NASSCOM member listing (if member), Startup India / DPIIT (if recognized), ABDM sandbox/partner listings (if integrated).
-- **Language:** start with English (`en-IN`). Phase 2: Hindi landing pages for the healthcare product (`hi-IN`, with hreflang), aimed at Tier 2/3 lab owners. Add others (Tamil, Telugu, Marathi, etc.) based on demand.
+- **Indian directories and listings:** Clutch, GoodFirms, DesignRush, IndiaMART (for products), Justdial, NASSCOM member listing (if member), Startup India / DPIIT (if recognized), insurtech directories and accelerator listings.
+- **Language:** start with English (`en-IN`). Insurer and TPA buyers search in English, so the product does not need other languages at launch. Add Hindi or regional pages (with `hreflang`) only for service segments where demand shows up in Search Console.
 - **Currency and trust:** INR pricing, GST-compliant invoicing, Indian phone number, UPI/Razorpay for any self-serve plans.
 
 ---
@@ -240,10 +322,10 @@ Competitive, so target long-tail and location modifiers.
 ## 10. Off-page SEO and authority
 
 1. **Listings and reviews:** Clutch/GoodFirms profiles with 5–10 client reviews in the first quarter
-2. **Healthcare ecosystem:** guest articles in Indian health-tech publications (e.g. ETHealthworld, Express Healthcare); talks at lab and hospital association events
-3. **Tech ecosystem:** open-source a small useful tool (e.g. an Indian lab-report parser sample dataset or a FHIR converter). Engineers link to tools, not to service pages.
-4. **PR from data:** publish our annual healthcare digitization report
-5. **Partnerships:** LIS/HIS vendors, ABDM ecosystem partners, cloud partner directories (AWS/Azure/GCP)
+2. **Insurance and health ecosystem:** guest articles in Indian insurance and health-tech publications (e.g. ETHealthworld, ET BFSI, Insurance Times); talks at insurtech and underwriting events
+3. **Tech ecosystem:** open-source a small useful tool (e.g. a lab test-name normaliser or a units/reference-range mapping library). Engineers link to tools, not to service pages.
+4. **PR from data:** publish the annual underwriting-medicals benchmark report
+5. **Partnerships:** diagnostic networks that run insurers' medicals, core insurance / policy-admin system vendors, cloud partner directories (AWS/Azure/GCP)
 6. **Founder-led LinkedIn content:** the main B2B discovery channel in India. Repurpose every blog post.
 
 ---
@@ -253,10 +335,10 @@ Competitive, so target long-tail and location modifiers.
 | Phase | Timeline | Deliverables |
 |---|---|---|
 | **0. Foundations** | Weeks 1–2 | Finalize brand name and positioning, keyword research and keyword→URL map, sitemap, wireframes, collect case studies, metrics and logos, GBP setup, analytics/Search Console |
-| **1. MVP site launch** | Weeks 3–6 | Home, About, Contact, 5 core service pages, medical-report-digitization product page (+ pricing/demo), 2 industry pages (Healthcare, Diagnostic Labs), 2 case studies, legal pages including DPDP/Privacy, schema, sitemap, CWV-optimized |
-| **2. Content and lead engine** | Months 2–3 | Blog with 2 posts per week, first pillar page (medical records digitization), solution pages (lab report OCR, prescription OCR, ABDM integration), ROI calculator, gated ABDM checklist, Clutch/GoodFirms listings |
-| **3. Product-led growth** | Months 3–5 | Free OCR demo tool, API docs pages, remaining service sub-pages, remaining industry pages, 2nd pillar (AI for Indian businesses) |
-| **4. Expansion** | Months 6–12 | Hindi healthcare pages, city pages (only where real), annual data report, open-source tool, CMS migration if needed, CRO testing on top landing pages |
+| **1. MVP site launch** | Weeks 3–6 | Home, About, Contact, 3 service pillar pages (workflow automation, AI consulting, software consulting) + 2–3 sub-pages, Caseproof product page + security page, book-a-demo and book-a-consultation pages, 2 industry pages (Health/Life Insurance, TPAs), 2 case studies, legal pages including DPDP/Privacy, schema, sitemap, CWV-optimized |
+| **2. Content and lead engine** | Months 2–3 | Blog with 2 posts per week, first pillar page (insurance medical document digitisation), solution pages (MER digitisation, underwriting automation, lab report extraction, ECG/TMT), ROI calculator, gated vendor-security checklist, product walkthrough video, Clutch/GoodFirms listings |
+| **3. Product-led growth** | Months 3–5 | Sample-case pilot programme page, integrations/API pages, remaining service sub-pages, 2nd and 3rd pillar guides (custom workflow automation, AI for Indian businesses), first non-insurance service case study |
+| **4. Expansion** | Months 6–12 | New products added via the brief template, industry pages beyond insurance as service clients come in, regional-language pages only if buyers need them (insurer buyers mostly search in English), city pages (only where real), annual data report, open-source tool, CMS migration if needed, CRO testing on top landing pages |
 
 ---
 
@@ -267,7 +349,7 @@ Competitive, so target long-tail and location modifiers.
 | Organic clicks and impressions (India), by cluster | Search Console | Weekly |
 | Rankings for priority keywords | Ahrefs/Semrush or a cheaper tracker | Weekly |
 | Leads by source (form, WhatsApp, call) and by service/product | GA4 + CRM | Weekly |
-| Demo/sample uploads → pilots → paid | CRM | Monthly |
+| Demo requests → sample-case pilots → contracts | CRM | Monthly |
 | Core Web Vitals (field data) | Search Console / CrUX | Monthly |
 | Referring domains (Indian and healthcare) | Ahrefs/Semrush | Monthly |
 
@@ -278,10 +360,12 @@ Competitive, so target long-tail and location modifiers.
 ## 13. Open questions (need answers before Phase 1)
 
 1. **Brand:** What is the final company/brand name and domain? (Repo is `imaxineltd/website`. Is the brand "Imaxine"?)
-2. **Products:** Besides medical report digitization, which other products exist? Which are sellable now?
-3. **Proof:** Which clients, metrics and case studies can we publish (with permission)?
-4. **Compliance claims:** Is ABDM/HFR/HIP integration done or planned? Do we have ISO 27001/SOC 2? Where is data hosted?
-5. **Pricing:** Can we publish indicative INR pricing for the product and pilots?
-6. **Offices/presence:** Which cities have offices or staff (for GBP and city pages)?
-7. **Team for content:** Who writes and reviews (especially medical review)? What is the in-house vs agency budget?
-8. **Stack preference:** Any constraint on Next.js vs WordPress vs other? (Next.js recommended if devs maintain it; WordPress if marketing must self-edit from day one.)
+1a. **Caseproof name checks (before launch):** IP India trademark search in classes 9 and 42, a Google search for clashing software names, and securing the name on the main site (`/products/caseproof/`) plus a defensive domain if available (e.g. `caseproof.in` or `caseproof.ai`) and LinkedIn/X handles.
+2. **Services proof:** Beyond Caseproof, which past workflow, AI or software projects can we show (even anonymised), and in which industries?
+3. **Proof:** Which clients, metrics and case studies can we publish (with permission)? The results block needs real figures for % reduction in manual entry, turnaround hours and reports per month.
+4. **Compliance claims:** Is on-premise / private-cloud deployment actually offered? Do we have ISO 27001/SOC 2? Where is data hosted (India region)? What is our position on DPDP and insurers' IRDAI outsourcing requirements?
+5. **Accuracy and SLA:** Do we commit to field-level accuracy after QC, and to a turnaround SLA? These are what underwriting heads will ask first.
+6. **Pricing:** Can we publish indicative INR pricing for the product and pilots?
+7. **Offices/presence:** Which cities have offices or staff (for GBP and city pages)?
+8. **Team for content:** Who writes and reviews (especially medical review)? What is the in-house vs agency budget?
+9. **Stack preference:** Any constraint on Next.js vs WordPress vs other? (Next.js recommended if devs maintain it; WordPress if marketing must self-edit from day one.)
