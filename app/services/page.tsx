@@ -5,18 +5,13 @@ import { Container } from "@/components/ui";
 import { Reveal } from "@/components/Reveal";
 import { CtaBand } from "@/components/CtaBand";
 import { services } from "@/lib/services";
-import { cta, site } from "@/lib/site";
+import { cta, pageMeta, site } from "@/lib/site";
 
-const title = `Workflow Automation, AI & Software Consulting Services | ${site.name}`;
+const title = `Automation, AI & Software Services in India | ${site.name}`;
 const description =
-  "Custom workflow automation, AI consulting and development, and software consulting for businesses in India.";
+  "Custom workflow automation, AI consulting and development, and software consulting for businesses in India, from the team that built Caseproof.";
 
-export const metadata: Metadata = {
-  title,
-  description,
-  alternates: { canonical: "/services" },
-  openGraph: { title, description, url: "/services" },
-};
+export const metadata: Metadata = pageMeta({ title, description, path: "/services" });
 
 export default function ServicesPage() {
   return (

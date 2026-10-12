@@ -10,7 +10,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} | Workflow Automation, AI & Software Consulting in India`,
+    default: `Workflow Automation, AI & Software Consulting | ${site.name}`,
     template: `%s`,
   },
   description: site.description,

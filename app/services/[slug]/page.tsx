@@ -6,7 +6,7 @@ import { ButtonLink, Container, Faq, ImageSlot, JsonLd, breadcrumbSchema, faqSch
 import { Reveal } from "@/components/Reveal";
 import { CtaBand } from "@/components/CtaBand";
 import { process, services } from "@/lib/services";
-import { absoluteUrl, cta, site } from "@/lib/site";
+import { absoluteUrl, cta, pageMeta, site } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -21,12 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const s = services.find((x) => x.slug === slug);
   if (!s) return {};
   const title = `${s.title} | ${site.name}`;
-  return {
-    title,
-    description: s.description,
-    alternates: { canonical: `/services/${s.slug}` },
-    openGraph: { title, description: s.description, url: `/services/${s.slug}` },
-  };
+  return pageMeta({ title, description: s.description, path: `/services/${s.slug}` });
 }
 
 export default async function ServicePage({ params }: Props) {
@@ -73,6 +68,22 @@ export default async function ServicePage({ params }: Props) {
               </Reveal>
             ))}
           </div>
+        </Container>
+      </section>
+
+      <section aria-labelledby="examples-heading" className="pb-20">
+        <Container>
+          <h2 id="examples-heading" className="text-3xl font-semibold tracking-tight md:text-4xl">
+            Where this fits
+          </h2>
+          <p className="mt-4 max-w-[60ch] leading-relaxed text-muted">Examples of processes this service is built for.</p>
+          <ul className="mt-10 grid gap-x-12 gap-y-8 md:grid-cols-2">
+            {s.examples.map((e) => (
+              <li key={e} className="border-l-2 border-accent pl-5 leading-relaxed text-ink">
+                {e}
+              </li>
+            ))}
+          </ul>
         </Container>
       </section>
 

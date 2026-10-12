@@ -11,7 +11,7 @@ export const site = {
   formEndpoint: process.env.NEXT_PUBLIC_FORM_ENDPOINT ?? "",
   locale: "en_IN",
   description:
-    "Custom workflow automation, AI consulting and software development for businesses in India. Makers of Caseproof, medical document digitisation for insurers and TPAs.",
+    "Custom workflow automation, AI consulting and software development in India. Makers of Caseproof, medical document digitisation for insurers and TPAs.",
 };
 
 export const nav = [
@@ -28,4 +28,15 @@ export const cta = {
 
 export function absoluteUrl(path = "/") {
   return new URL(path, site.url).toString();
+}
+
+// Page metadata with canonical + Open Graph. Setting openGraph on a page replaces the inherited object,
+// so the share image is passed explicitly (falls back to the site-wide card).
+export function pageMeta({ title, description, path, image = "/opengraph-image" }: { title: string; description: string; path: string; image?: string }) {
+  return {
+    title,
+    description,
+    alternates: { canonical: path },
+    openGraph: { type: "website" as const, locale: site.locale, siteName: site.name, title, description, url: path, images: [image] },
+  };
 }

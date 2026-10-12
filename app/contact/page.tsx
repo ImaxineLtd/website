@@ -3,18 +3,13 @@ import { Suspense } from "react";
 import { EnvelopeSimple, WhatsappLogo } from "@phosphor-icons/react/ssr";
 import { Container } from "@/components/ui";
 import { ContactForm } from "@/components/ContactForm";
-import { site } from "@/lib/site";
+import { pageMeta, site } from "@/lib/site";
 
 const title = `Contact ${site.name}: Book a Consultation or Caseproof Demo`;
 const description =
   "Talk to Imaxine about workflow automation, AI or software consulting, or book a Caseproof demo for MER and medical report digitisation.";
 
-export const metadata: Metadata = {
-  title,
-  description,
-  alternates: { canonical: "/contact" },
-  openGraph: { title, description, url: "/contact" },
-};
+export const metadata: Metadata = pageMeta({ title, description, path: "/contact" });
 
 export default function ContactPage() {
   return (

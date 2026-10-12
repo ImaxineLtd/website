@@ -1,6 +1,6 @@
 # Website Plan: IT Consulting, Automation, AI/ML Services and Medical Report Digitization (India, SEO-led)
 
-> Status: Draft v5 (product named Caseproof) · Owner: TBD · Last updated: 2026-10-12
+> Status: Draft v6 (paper-MER focus, insurer target accounts, Phase 1 site built) · Owner: TBD · Last updated: 2026-10-12
 > Placeholders in `[brackets]` need input from the business.
 
 ---
@@ -57,6 +57,27 @@ Future products are added later using `docs/content/product-brief-template.md`. 
 5. Leads tagged by product in the CRM so each product's pipeline is measured separately
 
 **Products hub at launch:** with a single product, `/products/` can redirect to the product page (or show it as the single card). It becomes a real hub when the second product arrives.
+
+### Caseproof lead angle: physical MER forms
+Many Indian life and health insurers still receive **paper MER forms filled in by hand** at diagnostic centres during the pre-policy medical check-up (PPMC). These are slow and error-prone to key in, and they are where Caseproof's AI plus human review is strongest. The website, keywords and outreach lead with handwritten/physical MER digitisation; lab, ECG and TMT reports are supporting document types.
+
+### 2b. Target accounts (sales outreach, not website content)
+
+Caseproof is sold to a small number of large buyers, so SEO is backed by direct outreach to named accounts (account-based marketing):
+
+| Insurer | Notes |
+|---|---|
+| Tata AIA Life Insurance | Priority target. Confirm current MER process (paper vs digital) through contacts. |
+| Axis Max Life Insurance (formerly Max Life) | Priority target. |
+| Other life and health insurers and TPAs that still use physical MER forms | Build the list from industry contacts and diagnostic-network partners. Verify which still use paper before outreach. |
+
+**Do not name these insurers on the website** (no "for Tata AIA" pages, logos or keywords) unless they are customers who have given written permission. Naming them implies a relationship, risks trademark complaints, and would put off the very buyers we want.
+
+How the site supports outreach:
+- Every outreach message links to `/products/caseproof` and the security page, which answer underwriting and vendor-risk questions before the first call.
+- The Caseproof FAQ covers "Does it work with our insurer's MER format?" (yes, configured per customer), which is the first question a named account will ask.
+- Use LinkedIn (heads of underwriting, medical underwriting, operations) plus diagnostic-network partners who already process these insurers' PPMCs.
+- Track named-account visits with reverse-IP tools only if allowed under DPDP and our privacy policy.
 
 ### Product differentiators (from the product brief)
 - **Built for insurance medical documents**: MER forms, blood and lab panels, ECGs and TMTs, including handwritten fields and mixed-quality scans.
@@ -152,7 +173,7 @@ Every service, product and solution page should include:
 5. Proof: a case study, metrics and client logos (with permission)
 6. Tech stack and integrations
 7. Engagement models and indicative INR pricing (where possible)
-8. An FAQ section (written to win People Also Ask results, with FAQ schema)
+8. An FAQ section answering real buyer questions in plain, quotable sentences (helps People Also Ask and AI answers). FAQPage schema can stay but no longer earns Google rich results (see `docs/SEO_REVIEW.md`).
 9. Related services and products (internal links)
 10. A final CTA and a short form (name, company, phone, requirement)
 
@@ -169,7 +190,8 @@ Every product gets its own cluster built the same way: product-category terms, p
 - branded: caseproof, caseproof demo, caseproof pricing (track branded search growth as a KPI)
 Low volume but very high intent and low competition. A few hundred searches a month from the right underwriting or TPA buyers is worth more than thousands of generic visits. Use both spellings (digitisation/digitization) across pages, since Indian searchers use both.
 - medical report digitisation / digitization, medical document digitisation for insurance
-- MER digitisation, medical examination report data extraction
+- MER digitisation, handwritten MER form digitisation, physical / paper MER to digital
+- medical examination report data extraction
 - PPMC report digitisation, pre-policy medical check-up automation
 - medical underwriting automation India, underwriting data extraction
 - lab report data extraction, blood test report to Excel / structured data

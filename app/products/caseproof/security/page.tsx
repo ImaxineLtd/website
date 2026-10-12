@@ -1,18 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { ButtonLink, Container, JsonLd, breadcrumbSchema } from "@/components/ui";
-import { absoluteUrl, cta } from "@/lib/site";
+import { absoluteUrl, cta, pageMeta } from "@/lib/site";
 
 const title = "Caseproof Security: Isolated Environments & Access Control";
 const description =
-  "How Caseproof protects medical data for insurers and TPAs: an isolated environment per customer, role-based access, encryption in transit and a full audit trail.";
+  "How Caseproof protects medical data for insurers and TPAs: an isolated environment per customer, role-based access, encrypted transfer and a full audit trail.";
 
-export const metadata: Metadata = {
-  title,
-  description,
-  alternates: { canonical: "/products/caseproof/security" },
-  openGraph: { title, description, url: "/products/caseproof/security" },
-};
+export const metadata: Metadata = pageMeta({ title, description, path: "/products/caseproof/security", image: "/products/caseproof/opengraph-image" });
 
 const sections = [
   {

@@ -4,14 +4,9 @@ import { ButtonLink, Container, Faq, ImageSlot, JsonLd, breadcrumbSchema, faqSch
 import { Reveal } from "@/components/Reveal";
 import { CtaBand } from "@/components/CtaBand";
 import { caseproof as cp } from "@/lib/caseproof";
-import { absoluteUrl, cta, site } from "@/lib/site";
+import { absoluteUrl, cta, pageMeta, site } from "@/lib/site";
 
-export const metadata: Metadata = {
-  title: cp.title,
-  description: cp.description,
-  alternates: { canonical: "/products/caseproof" },
-  openGraph: { title: cp.title, description: cp.description, url: "/products/caseproof" },
-};
+export const metadata: Metadata = pageMeta({ title: cp.title, description: cp.description, path: "/products/caseproof", image: "/products/caseproof/opengraph-image" });
 
 const software = {
   "@context": "https://schema.org",
@@ -191,7 +186,6 @@ export default function CaseproofPage() {
       <JsonLd
         data={breadcrumbSchema([
           { name: "Home", url: absoluteUrl("/") },
-          { name: "Products", url: absoluteUrl("/products") },
           { name: cp.name, url: absoluteUrl("/products/caseproof") },
         ])}
       />

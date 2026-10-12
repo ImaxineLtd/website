@@ -6,7 +6,7 @@ export const caseproof = {
   descriptor: "Medical document digitisation for insurers and TPAs",
   title: "Handwritten MER Digitisation for Insurers & TPAs | Caseproof",
   description:
-    "Turn physical, handwritten MER forms, lab reports, ECGs and TMTs into verified, structured data in hours. AI extraction plus human QC for Indian insurers and TPAs.",
+    "Turn handwritten MER forms, lab reports, ECGs and TMTs into verified, structured data in hours. AI extraction plus human QC for Indian insurers and TPAs.",
   h1: "Digitise handwritten MER forms in hours, not days",
   intro:
     "Caseproof reads scanned paper MERs, lab reports, ECGs and TMTs, then reviewers verify every field before it reaches underwriting.",
@@ -82,6 +82,14 @@ export const caseproof = {
     {
       q: "Can Caseproof read handwritten MER forms?",
       a: "Yes. It is built for physical MER forms filled in by hand, including ticks, written answers and examiner notes. Reviewers correct anything uncertain against the original scan before delivery.",
+    },
+    {
+      q: "Does Caseproof work with our insurer's MER format?",
+      a: "Yes. Each insurer's MER form has its own layout and questions. Caseproof is configured for your forms, test catalogue and output format during onboarding, so reports from every diagnostic centre arrive in one consistent structure.",
+    },
+    {
+      q: "What is a PPMC report?",
+      a: "A pre-policy medical check-up (PPMC) is the medical examination an insurer asks for before issuing a policy. It usually produces an MER form plus lab, ECG and sometimes TMT reports, which Caseproof digitises together as one case.",
     },
     {
       q: "What is MER digitisation?",

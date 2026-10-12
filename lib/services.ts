@@ -7,6 +7,7 @@ export type Service = {
   h1: string;
   intro: string;
   offerings: { title: string; body: string }[];
+  examples: string[];
   faqs: { q: string; a: string }[];
 };
 
@@ -37,6 +38,12 @@ export const services: Service[] = [
         title: "System integration",
         body: "Connect to your ERP, CRM, core systems or spreadsheets through APIs, webhooks and scheduled exports.",
       },
+    ],
+    examples: [
+      "Insurance back office: onboarding documents collected, checked against a checklist and passed to underwriting, with missing items chased automatically.",
+      "Finance operations: vendor invoices read, matched to purchase orders, and sent for approval when amounts or GST details do not match.",
+      "Field teams: inspection or delivery forms captured on mobile, reviewed by a supervisor and exported to your reporting system.",
+      "Customer requests: emails and WhatsApp messages sorted, assigned to the right person and tracked to closure with turnaround reports.",
     ],
     faqs: [
       {
@@ -80,6 +87,12 @@ export const services: Service[] = [
         body: "Forecasting, scoring and classification models, deployed and monitored as part of your systems.",
       },
     ],
+    examples: [
+      "Reading handwritten medical forms for insurers, the core of Caseproof, with reviewers checking every field.",
+      "Classifying incoming documents such as ID proofs, bank statements and bills, and extracting key fields for KYC or claims.",
+      "An internal assistant that answers staff questions from your policies and manuals, with the source shown for every answer.",
+      "Photo checks in manufacturing or logistics that flag damaged goods or missing labels for a person to confirm.",
+    ],
     faqs: [
       {
         q: "Where should we start with AI?",
@@ -99,7 +112,7 @@ export const services: Service[] = [
     slug: "software-consulting",
     name: "Software consulting and development",
     short: "Platforms, APIs and internal tools, built by the team that runs Caseproof in production.",
-    title: "Software Consulting & Custom Software Development in India",
+    title: "Software Consulting & Development in India",
     description:
       "Software consulting and custom software development in India: web platforms, SaaS, APIs and integrations, cloud architecture and legacy modernisation.",
     h1: "Software consulting and custom development for growing businesses",
@@ -121,6 +134,12 @@ export const services: Service[] = [
         title: "Legacy modernisation",
         body: "Move ageing applications to maintainable systems in stages, without stopping the business.",
       },
+    ],
+    examples: [
+      "A customer portal where clients upload documents, track the status of their case and download reports.",
+      "An internal operations platform that replaces spreadsheets passed around over email.",
+      "A multi-tenant SaaS product with a separate environment per customer, the architecture behind Caseproof.",
+      "Scheduled integrations that keep an ERP, CRM and accounting system in sync.",
     ],
     faqs: [
       {

@@ -1,11 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowUpRight } from "@phosphor-icons/react/ssr";
-import { ButtonLink, Container, ImageSlot } from "@/components/ui";
+import { ButtonLink, Container, ImageSlot, JsonLd } from "@/components/ui";
 import { Reveal } from "@/components/Reveal";
 import { CtaBand } from "@/components/CtaBand";
 import { caseproof } from "@/lib/caseproof";
 import { process, services } from "@/lib/services";
-import { cta } from "@/lib/site";
+import { cta, site } from "@/lib/site";
+
+export const metadata: Metadata = { alternates: { canonical: "/" } };
 
 const principles = [
   {
@@ -160,6 +163,7 @@ export default function Home() {
         href={cta.consult.href}
         label={cta.consult.label}
       />
+      <JsonLd data={{ "@context": "https://schema.org", "@type": "WebSite", name: site.name, url: site.url, inLanguage: "en-IN" }} />
     </>
   );
 }
