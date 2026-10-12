@@ -1,6 +1,6 @@
 # Website Plan: IT Consulting, Automation, AI/ML Services and Medical Report Digitization (India, SEO-led)
 
-> Status: Draft v2 (updated with product details) · Owner: TBD · Last updated: 2026-10-12
+> Status: Draft v3 (multi-product portfolio) · Owner: TBD · Last updated: 2026-10-12
 > Placeholders in `[brackets]` need input from the business.
 
 ---
@@ -10,7 +10,7 @@
 | # | Goal | How we measure it (first 6–12 months) |
 |---|------|---------------------------------------|
 | 1 | Get qualified B2B leads from Indian organic search | Organic sessions from India, form/WhatsApp/call leads, lead-to-meeting rate |
-| 2 | Sell [Product Name] (medical document digitisation) to insurers, TPAs, diagnostic networks and health platforms | Demo requests, sample-case pilots, contracts signed |
+| 2 | Sell each product in the portfolio to its own industry buyers (first documented product: [Product Name], medical document digitisation for insurers and TPAs) | Demo requests and pilots **per product**, contracts signed |
 | 3 | Build authority in AI/ML and automation for Indian businesses | Rankings for target clusters, backlinks from Indian domains, branded search growth |
 | 4 | Shorten the sales cycle | Pages per lead, case-study views before contact, time from first visit to demo |
 
@@ -25,10 +25,31 @@
 
 Two engines, one brand:
 
-1. **Products (proof)**: [Product Name], AI-powered medical document digitisation with human review, plus any other products. These show we ship working AI, not slide decks.
+1. **Products (proof)**: a portfolio of AI products across several industries (see §2a). These show we ship working AI, not slide decks.
 2. **Services (revenue breadth)**: IT consulting, process automation (RPA/workflow), AI/ML development, data engineering.
 
 The products give the services credibility. Every service page links to a product case study, and every product page offers "custom build / integration" services.
+
+### 2a. Portfolio and brand architecture
+
+The company brand is the umbrella. The homepage and brand message must speak to **all** industries, not only healthcare; each product then speaks to its own buyer.
+
+**Recommendation: all products live on the main domain as subfolders** (`/products/<product>/`), not on separate domains or subdomains. Backlinks and authority earned by any product then lift every product and service page. Use a separate domain only if a product has a different brand, a separate sales team and its own marketing budget.
+
+| Product | Industry / buyer | Status | Brief |
+|---|---|---|---|
+| [Product Name]: medical document digitisation | Insurers, TPAs, diagnostic networks, health platforms | Brief received | `docs/content/product-page.md` |
+| [Product 2] | [Industry] | Awaiting brief | Fill `docs/content/product-brief-template.md` |
+| [Product 3] | [Industry] | Awaiting brief | Fill `docs/content/product-brief-template.md` |
+
+**How each product is handled (same playbook every time):**
+1. Its own product page plus security/integrations/pricing sub-pages where relevant
+2. Its own keyword cluster (§5) and 2–4 problem-led solution pages
+3. An industry page for its buyer, which also links to relevant services
+4. Its own pilot or demo offer and a case study
+5. Leads tagged by product in the CRM so each product's pipeline is measured separately
+
+**Launch priority:** put products on the site in order of (a) proof we can publish (clients, numbers), (b) sales readiness, and (c) how winnable their keywords are. Products without proof yet still get a page at launch, but get SEO investment later.
 
 ### Product differentiators (from the product brief)
 - **Built for insurance medical documents**: MER forms, blood and lab panels, ECGs and TMTs, including handwritten fields and mixed-quality scans.
@@ -78,20 +99,22 @@ Keep URLs short, lowercase and keyword-bearing. Each service or product gets its
   /services/data-engineering/
   /services/cloud-devops/            (only if offered)
 /products/                          Products hub
-  /products/[product-slug]/                   main product page (draft copy: docs/content/product-page.md)
-    /products/[product-slug]/security/          isolation, access control, deployment options
-    /products/[product-slug]/integrations/      intake API, webhooks, exports
-    /products/[product-slug]/pricing/           or "request pricing" if not public
-  /products/[other-product]/
-/industries/
+                                    lists every product, filterable by industry
+  /products/[medical-doc-product]/            medical document digitisation (copy: docs/content/product-page.md)
+    /products/[medical-doc-product]/security/
+    /products/[medical-doc-product]/integrations/
+    /products/[medical-doc-product]/pricing/  or "request pricing"
+  /products/[product-2]/                      same sub-page pattern per product, as needed
+  /products/[product-3]/
+/industries/                        one page per industry we sell into; each lists that industry's products + services
   /industries/health-insurance/
   /industries/life-insurance/
   /industries/tpa/
   /industries/diagnostic-networks/
   /industries/digital-health/
-  /industries/manufacturing/
-  /industries/bfsi/
-  /industries/logistics/
+  /industries/[industry of product 2]/
+  /industries/[industry of product 3]/
+  /industries/manufacturing/  /industries/bfsi/  /industries/logistics/   (only if we have products or case studies there)
 /solutions/                         problem-led pages (high-intent SEO)
   /solutions/mer-digitisation/                  medical examination reports
   /solutions/medical-underwriting-automation/
@@ -128,7 +151,10 @@ Every service, product and solution page should include:
 
 Validate volumes and difficulty with Google Keyword Planner (location: India), Ahrefs/Semrush and Search Console once live. The clusters below are the starting hypothesis.
 
-### Cluster A: Insurance medical document digitisation (product, highest priority)
+### Product clusters (A1, A2, …): one cluster per product
+Every product gets its own cluster built the same way: product-category terms, problem/job-to-be-done terms, document or data-type terms, and "[category] software India" terms. Clusters for other products are added as their briefs come in.
+
+### Cluster A1: Insurance medical document digitisation ([Product Name])
 Low volume but very high intent and low competition. A few hundred searches a month from the right underwriting or TPA buyers is worth more than thousands of generic visits. Use both spellings (digitisation/digitization) across pages, since Indian searchers use both.
 - medical report digitisation / digitization, medical document digitisation for insurance
 - MER digitisation, medical examination report data extraction
@@ -185,7 +211,7 @@ Competitive, so target long-tail and location modifiers.
 | *Intelligent document processing (IDP) explained* | OCR vs IDP; KYC extraction; insurance claims automation; multilingual OCR for Indian languages |
 
 ### Cadence
-- **Months 1–3:** 2 articles per week (prioritize Cluster A and E healthcare topics), plus 2 case studies
+- **Months 1–3:** 2 articles per week (prioritise the product clusters with publishable proof, plus matching informational topics), plus 2 case studies
 - **Months 4–12:** 1–2 articles per week, 1 case study per month, quarterly refresh of top pages
 
 ### High-value assets (lead magnets and link magnets)
@@ -269,7 +295,7 @@ Competitive, so target long-tail and location modifiers.
 | Phase | Timeline | Deliverables |
 |---|---|---|
 | **0. Foundations** | Weeks 1–2 | Finalize brand name and positioning, keyword research and keyword→URL map, sitemap, wireframes, collect case studies, metrics and logos, GBP setup, analytics/Search Console |
-| **1. MVP site launch** | Weeks 3–6 | Home, About, Contact, 5 core service pages, [Product Name] product page + security page + book-a-demo page, 2 industry pages (Health/Life Insurance, TPAs), 2 case studies, legal pages including DPDP/Privacy, schema, sitemap, CWV-optimized |
+| **1. MVP site launch** | Weeks 3–6 | Home, About, Contact, 5 core service pages, Products hub, a product page for **every** product (full depth for the 1–2 with the most proof, including the medical-document product's security page), book-a-demo page, one industry page per product's main industry, 2 case studies, legal pages including DPDP/Privacy, schema, sitemap, CWV-optimized |
 | **2. Content and lead engine** | Months 2–3 | Blog with 2 posts per week, first pillar page (insurance medical document digitisation), solution pages (MER digitisation, underwriting automation, lab report extraction, ECG/TMT), ROI calculator, gated vendor-security checklist, product walkthrough video, Clutch/GoodFirms listings |
 | **3. Product-led growth** | Months 3–5 | Sample-case pilot programme page, integrations/API pages, remaining service sub-pages, remaining industry pages, 2nd pillar (AI for Indian businesses) |
 | **4. Expansion** | Months 6–12 | Regional-language pages only if buyers need them (insurer buyers mostly search in English), city pages (only where real), annual data report, open-source tool, CMS migration if needed, CRO testing on top landing pages |
@@ -294,7 +320,7 @@ Competitive, so target long-tail and location modifiers.
 ## 13. Open questions (need answers before Phase 1)
 
 1. **Brand:** What is the final company/brand name and domain? (Repo is `imaxineltd/website`. Is the brand "Imaxine"?)
-2. **Product name and other products:** What is [Product Name]? Which other products exist and are sellable now?
+2. **Product portfolio:** Names of all products, the industry each serves, and which are sellable now. One filled `docs/content/product-brief-template.md` per product.
 3. **Proof:** Which clients, metrics and case studies can we publish (with permission)? The results block needs real figures for % reduction in manual entry, turnaround hours and reports per month.
 4. **Compliance claims:** Is on-premise / private-cloud deployment actually offered? Do we have ISO 27001/SOC 2? Where is data hosted (India region)? What is our position on DPDP and insurers' IRDAI outsourcing requirements?
 5. **Accuracy and SLA:** Do we commit to field-level accuracy after QC, and to a turnaround SLA? These are what underwriting heads will ask first.
