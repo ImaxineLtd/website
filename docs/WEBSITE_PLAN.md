@@ -1,6 +1,6 @@
 # Website Plan: IT Consulting, Automation, AI/ML Services and Medical Report Digitization (India, SEO-led)
 
-> Status: Draft v3 (multi-product portfolio) · Owner: TBD · Last updated: 2026-10-12
+> Status: Draft v4 (one flagship product + three service lines) · Owner: TBD · Last updated: 2026-10-12
 > Placeholders in `[brackets]` need input from the business.
 
 ---
@@ -10,7 +10,8 @@
 | # | Goal | How we measure it (first 6–12 months) |
 |---|------|---------------------------------------|
 | 1 | Get qualified B2B leads from Indian organic search | Organic sessions from India, form/WhatsApp/call leads, lead-to-meeting rate |
-| 2 | Sell each product in the portfolio to its own industry buyers (first documented product: [Product Name], medical document digitisation for insurers and TPAs) | Demo requests and pilots **per product**, contracts signed |
+| 2 | Sell [Product Name] (medical document digitisation) to insurers, TPAs, diagnostic networks and health platforms | Demo requests, sample-case pilots, contracts signed |
+| 2b | Win custom workflow, AI and software consulting projects | Consultation bookings, proposals sent, projects won |
 | 3 | Build authority in AI/ML and automation for Indian businesses | Rankings for target clusters, backlinks from Indian domains, branded search growth |
 | 4 | Shorten the sales cycle | Pages per lead, case-study views before contact, time from first visit to demo |
 
@@ -21,35 +22,38 @@
 
 ## 2. Positioning
 
-**One-liner (draft):** *"AI, automation and IT consulting for Indian businesses, with production-ready products for healthcare document digitization."*
+**One-liner (draft):** *"We build AI-powered workflows and software for Indian businesses, and we run them in production ourselves."*
 
 Two engines, one brand:
 
-1. **Products (proof)**: a portfolio of AI products across several industries (see §2a). These show we ship working AI, not slide decks.
-2. **Services (revenue breadth)**: IT consulting, process automation (RPA/workflow), AI/ML development, data engineering.
+1. **Flagship product (proof)**: [Product Name], medical document digitisation for insurers and TPAs.
+2. **Services (revenue breadth)**, three lines:
+   - **Custom workflow automation**: workflows built around how a business actually operates (intake → processing → human review → approval → delivery), not off-the-shelf RPA scripts.
+   - **AI consulting and development**: document AI/OCR, computer vision, ML models, generative AI/LLM applications, from strategy and PoC to production.
+   - **Software consulting and development**: custom web platforms, APIs and integrations, cloud architecture, and modernising legacy systems.
 
-The products give the services credibility. Every service page links to a product case study, and every product page offers "custom build / integration" services.
+**The product is the best case study for the services.** [Product Name] is itself a custom workflow (case intake, assignment, side-by-side review, audit trail, dashboards, API delivery) with AI in the middle, running as isolated per-customer software. Every service page should say: *"We built and run [Product Name]; we can build the same kind of system for your process."*
 
 ### 2a. Portfolio and brand architecture
 
-The company brand is the umbrella. The homepage and brand message must speak to **all** industries, not only healthcare; each product then speaks to its own buyer.
+The company brand is the umbrella. Today there is one product and three service lines. The homepage leads with the services (they apply to every industry) and features the product as a flagship and proof point, so the site does not read as healthcare-only.
 
 **Recommendation: all products live on the main domain as subfolders** (`/products/<product>/`), not on separate domains or subdomains. Backlinks and authority earned by any product then lift every product and service page. Use a separate domain only if a product has a different brand, a separate sales team and its own marketing budget.
 
 | Product | Industry / buyer | Status | Brief |
 |---|---|---|---|
 | [Product Name]: medical document digitisation | Insurers, TPAs, diagnostic networks, health platforms | Brief received | `docs/content/product-page.md` |
-| [Product 2] | [Industry] | Awaiting brief | Fill `docs/content/product-brief-template.md` |
-| [Product 3] | [Industry] | Awaiting brief | Fill `docs/content/product-brief-template.md` |
 
-**How each product is handled (same playbook every time):**
+Future products are added later using `docs/content/product-brief-template.md`. The site structure already allows for this, so nothing has to be rebuilt.
+
+**How each future product is handled (same playbook every time):**
 1. Its own product page plus security/integrations/pricing sub-pages where relevant
 2. Its own keyword cluster (§5) and 2–4 problem-led solution pages
 3. An industry page for its buyer, which also links to relevant services
 4. Its own pilot or demo offer and a case study
 5. Leads tagged by product in the CRM so each product's pipeline is measured separately
 
-**Launch priority:** put products on the site in order of (a) proof we can publish (clients, numbers), (b) sales readiness, and (c) how winnable their keywords are. Products without proof yet still get a page at launch, but get SEO investment later.
+**Products hub at launch:** with a single product, `/products/` can redirect to the product page (or show it as the single card). It becomes a real hub when the second product arrives.
 
 ### Product differentiators (from the product brief)
 - **Built for insurance medical documents**: MER forms, blood and lab panels, ECGs and TMTs, including handwritten fields and mixed-quality scans.
@@ -74,8 +78,10 @@ The company brand is the umbrella. The homepage and brand message must speak to 
 | **TPAs** (primary) | Ops heads, medical teams, IT | High volumes of medical documents for claims and health checks, tight SLAs | Pilot on a real batch, API integration |
 | **Diagnostic networks serving insurers** | Insurance desk heads, ops managers | Converting reports into each insurer's format and catalogue | Demo, per-report pricing |
 | **Digital health platforms** | Product and engineering teams | Turning uploaded reports into structured health records | Intake API and webhook integration |
-| **SMEs and mid-market** (manufacturing, logistics, finance, retail) | Founders, ops heads | Manual processes, Excel/Tally-heavy workflows | Automation audit, quick-win automation |
-| **Enterprises and startups** | CTOs, product heads | Need AI/ML talent and delivery capacity | AI strategy workshop, PoC, dedicated team |
+| **Existing product customers** (services upsell) | Ops and IT heads at insurers/TPAs | Other manual back-office processes (claims, onboarding, approvals) | Workflow automation discovery workshop |
+| **SMEs and mid-market** (manufacturing, logistics, finance, retail) → *workflow automation* | Founders, ops heads | Manual, Excel-heavy processes, approvals over email/WhatsApp | Process audit, fixed-price first workflow |
+| **Enterprises** → *AI consulting* | CTOs, innovation and ops heads | Want AI in production, not just experiments | AI use-case workshop, paid PoC |
+| **Startups and product companies** → *software consulting* | Founders, CTOs | Need to build or scale a platform without a large in-house team | Architecture review, MVP build, dedicated team |
 
 ---
 
@@ -86,26 +92,28 @@ Keep URLs short, lowercase and keyword-bearing. Each service or product gets its
 ```
 /                                   Home
 /services/                          Services hub
-  /services/it-consulting/
-  /services/business-process-automation/
-    /services/rpa-services/
-    /services/document-automation/
-  /services/ai-development/
-    /services/generative-ai-llm-solutions/
-    /services/chatbot-development/
-  /services/machine-learning-development/
+  /services/workflow-automation/                     pillar 1: custom workflow automation
+    /services/document-processing-automation/        (closest to the product; easiest proof)
+    /services/approval-and-review-workflows/          human-in-the-loop, maker-checker
+    /services/system-integration/                     APIs, webhooks, ERP/CRM connections
+  /services/ai-consulting/                           pillar 2: AI consulting and development
+    /services/document-ai-ocr/
     /services/computer-vision/
-    /services/predictive-analytics/
-  /services/data-engineering/
-  /services/cloud-devops/            (only if offered)
+    /services/generative-ai-development/              LLM apps, RAG, assistants
+    /services/machine-learning-development/
+  /services/software-consulting/                     pillar 3: software consulting and development
+    /services/custom-software-development/
+    /services/saas-platform-development/
+    /services/cloud-architecture/
+    /services/legacy-modernisation/
+  Launch with the 3 pillar pages + 2–3 sub-pages that have the strongest proof; add the rest as content capacity allows.
 /products/                          Products hub
                                     lists every product, filterable by industry
   /products/[medical-doc-product]/            medical document digitisation (copy: docs/content/product-page.md)
     /products/[medical-doc-product]/security/
     /products/[medical-doc-product]/integrations/
     /products/[medical-doc-product]/pricing/  or "request pricing"
-  /products/[product-2]/                      same sub-page pattern per product, as needed
-  /products/[product-3]/
+  /products/[future-product]/                 added later, same pattern
 /industries/                        one page per industry we sell into; each lists that industry's products + services
   /industries/health-insurance/
   /industries/life-insurance/
@@ -166,24 +174,29 @@ Low volume but very high intent and low competition. A few hundred searches a mo
 - human-in-the-loop document processing, intelligent document processing for insurance
 - medical OCR API India, medical report OCR software
 
-### Cluster B: AI/ML services
-Competitive, so target long-tail and location modifiers.
-- AI development company in India, AI consulting services India
-- machine learning development services India
-- computer vision company India, OCR solution provider India
-- generative AI development company India, LLM / RAG chatbot development
-- AI for healthcare India, AI for manufacturing India
+The three service clusters below are competitive at the head term ("AI development company India"). Win first on long-tail and industry-specific variants, where the product gives us proof (documents, insurance, healthcare, human review).
 
-### Cluster C: Automation
+### Cluster B: Custom workflow automation
+- custom workflow automation services India, workflow automation company India
 - business process automation services India
-- RPA services / RPA company India
-- document automation, invoice processing automation
-- workflow automation for SMEs, Tally / ERP automation
-- WhatsApp automation for business
+- document processing automation, document workflow automation
+- human-in-the-loop workflow, maker-checker / approval workflow software
+- custom workflow software development, workflow management system development
+- insurance workflow automation, claims workflow automation, back-office automation India
 
-### Cluster D: IT consulting
-- IT consulting services India, digital transformation consulting
-- cloud migration consulting, IT strategy for SMEs
+### Cluster C: AI consulting and development
+- AI consulting services India, AI development company India
+- document AI / intelligent document processing services, OCR development company India
+- computer vision development India, machine learning development services India
+- generative AI development company India, LLM application development, RAG development
+- AI for insurance India, AI for healthcare India
+- "AI proof of concept" services, AI strategy consulting
+
+### Cluster D: Software consulting and development
+- software consulting services India, custom software development company India
+- SaaS development company India, multi-tenant SaaS architecture
+- API development and integration services, cloud architecture consulting
+- legacy application modernisation India
 - city modifiers (Bengaluru, Hyderabad, Pune, Mumbai, Delhi NCR, Chennai, Ahmedabad), only where we have a presence
 
 ### Cluster E: Informational (top of funnel, blog)
@@ -206,8 +219,9 @@ Competitive, so target long-tail and location modifiers.
 | Pillar page (long, evergreen) | Supporting articles (examples) |
 |---|---|
 | *Medical document digitisation for insurers and TPAs in India: the complete guide* | MER and PPMC data extraction; why human review matters for underwriting data; mapping lab values to a test catalogue and reference ranges; ECG/TMT report digitisation; DPDP checklist for insurers' document vendors; build vs buy for underwriting data |
-| *AI for Indian businesses: a practical guide* | AI use cases by industry; cost of AI projects in India; build vs buy; how to run an AI PoC |
-| *Business process automation guide for Indian SMEs* | RPA vs AI; automating Tally/GST workflows; invoice processing; WhatsApp automation |
+| *AI for Indian businesses: a practical guide* | AI use cases by industry; cost of AI projects in India; build vs buy; how to run an AI PoC; when AI needs a human reviewer |
+| *Custom workflow automation: a guide for Indian businesses* | Off-the-shelf vs custom workflow software; RPA vs AI vs custom workflows; designing human-in-the-loop review; audit trails and compliance; cost of building workflow software in India |
+| *Custom software development in India: a buyer's guide* | Fixed-price vs time-and-materials; how to scope an MVP; single-tenant vs multi-tenant SaaS; choosing a development partner; what to ask about security |
 | *Intelligent document processing (IDP) explained* | OCR vs IDP; KYC extraction; insurance claims automation; multilingual OCR for Indian languages |
 
 ### Cadence
@@ -295,10 +309,10 @@ Competitive, so target long-tail and location modifiers.
 | Phase | Timeline | Deliverables |
 |---|---|---|
 | **0. Foundations** | Weeks 1–2 | Finalize brand name and positioning, keyword research and keyword→URL map, sitemap, wireframes, collect case studies, metrics and logos, GBP setup, analytics/Search Console |
-| **1. MVP site launch** | Weeks 3–6 | Home, About, Contact, 5 core service pages, Products hub, a product page for **every** product (full depth for the 1–2 with the most proof, including the medical-document product's security page), book-a-demo page, one industry page per product's main industry, 2 case studies, legal pages including DPDP/Privacy, schema, sitemap, CWV-optimized |
+| **1. MVP site launch** | Weeks 3–6 | Home, About, Contact, 3 service pillar pages (workflow automation, AI consulting, software consulting) + 2–3 sub-pages, [Product Name] product page + security page, book-a-demo and book-a-consultation pages, 2 industry pages (Health/Life Insurance, TPAs), 2 case studies, legal pages including DPDP/Privacy, schema, sitemap, CWV-optimized |
 | **2. Content and lead engine** | Months 2–3 | Blog with 2 posts per week, first pillar page (insurance medical document digitisation), solution pages (MER digitisation, underwriting automation, lab report extraction, ECG/TMT), ROI calculator, gated vendor-security checklist, product walkthrough video, Clutch/GoodFirms listings |
-| **3. Product-led growth** | Months 3–5 | Sample-case pilot programme page, integrations/API pages, remaining service sub-pages, remaining industry pages, 2nd pillar (AI for Indian businesses) |
-| **4. Expansion** | Months 6–12 | Regional-language pages only if buyers need them (insurer buyers mostly search in English), city pages (only where real), annual data report, open-source tool, CMS migration if needed, CRO testing on top landing pages |
+| **3. Product-led growth** | Months 3–5 | Sample-case pilot programme page, integrations/API pages, remaining service sub-pages, 2nd and 3rd pillar guides (custom workflow automation, AI for Indian businesses), first non-insurance service case study |
+| **4. Expansion** | Months 6–12 | New products added via the brief template, industry pages beyond insurance as service clients come in, regional-language pages only if buyers need them (insurer buyers mostly search in English), city pages (only where real), annual data report, open-source tool, CMS migration if needed, CRO testing on top landing pages |
 
 ---
 
@@ -320,7 +334,7 @@ Competitive, so target long-tail and location modifiers.
 ## 13. Open questions (need answers before Phase 1)
 
 1. **Brand:** What is the final company/brand name and domain? (Repo is `imaxineltd/website`. Is the brand "Imaxine"?)
-2. **Product portfolio:** Names of all products, the industry each serves, and which are sellable now. One filled `docs/content/product-brief-template.md` per product.
+2. **Product and services proof:** What is [Product Name]? Beyond the product, which past workflow, AI or software projects can we show (even anonymised), and in which industries?
 3. **Proof:** Which clients, metrics and case studies can we publish (with permission)? The results block needs real figures for % reduction in manual entry, turnaround hours and reports per month.
 4. **Compliance claims:** Is on-premise / private-cloud deployment actually offered? Do we have ISO 27001/SOC 2? Where is data hosted (India region)? What is our position on DPDP and insurers' IRDAI outsourcing requirements?
 5. **Accuracy and SLA:** Do we commit to field-level accuracy after QC, and to a turnaround SLA? These are what underwriting heads will ask first.
